@@ -21,11 +21,11 @@ This is forked from https://github.com/ErikKalkoken/slackchannel2pdf to accommod
 
 This tool is aimed at end users that want to make backups of Slack conversations or be able to share them outside Slack. It will create a PDF file for every exported channel and will work both for public and private channels.
 
-**slackchannel2pdf** is an open source project and offered free of charge and under the MIT license. Please check attached licence file for details.
+**slackchannel2pdf-kr** is an open source project and offered free of charge and under the MIT license. Please check attached licence file for details.
 
 ## Features
 
-Here is a short summary of the key features of **slackchannel2pdf**:
+Here is a short summary of the key features of **slackchannel2pdf-kr**:
 
 - Export of any public and private Slack channel to a PDF file (text only)
 - Automatic detection of timezone and locale based from Slack. Can also be set manually if needed.
