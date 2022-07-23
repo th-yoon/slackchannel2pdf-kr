@@ -46,15 +46,11 @@ pip install git+https://github.com/th-yoon/slackchannel2pdf-kr.git
 
 You can then run the tool with the command `slackchannel2pdf-kr` as explained in detail under [Usage](#usage).
 
-### Windows
-
-Not supported yet.
-
 ## Token
 
 Please use personal token instead of bot token. 
 Bot token won't work.
-To run **slackchannel2pdf** your need to have a token for your Slack workspace with the following permissions:
+To run **slackchannel2pdf-kr** your need to have a token for your Slack workspace with the following permissions:
 
 - `channels:history`
 - `channels:read`
@@ -65,29 +61,29 @@ To run **slackchannel2pdf** your need to have a token for your Slack workspace w
 
 ## Usage
 
-In order to use **slackchannel2pdf** you need:
+In order to use **slackchannel2pdf-kr** you need:
 
 1. have it installed on your system (see [Installation](#installation))
 2. have a Slack token for the respective Slack workspace with the required permissions (see [Token](#token)).
 
-Here are some examples on how to use **slackchannel2pdf**:
+Here are some examples on how to use **slackchannel2pdf-kr**:
 
 To export the Slack channel "general":
 
 ```bash
-slackchannel2pdf --token MY_TOKEN general
+slackchannel2pdf-kr --token MY_TOKEN general
 ```
 
 To export the Slack channels "general", "random" and "test":
 
 ```bash
-slackchannel2pdf --token MY_TOKEN general random test
+slackchannel2pdf-kr --token MY_TOKEN general random test
 ```
 
 To export all message from channel "general" starting from July 5th, 2019 at 11:00.
 
 ```bash
-slackchannel2pdf --token MY_TOKEN --oldest "2019-JUL-05 11:00" general
+slackchannel2pdf-kr --token MY_TOKEN --oldest "2019-JUL-05 11:00" general
 ```
 
 > Tip: You can provide the Slack token either as command line argument `--token` or by setting the environment variable `SLACK-TOKEN`.
@@ -95,7 +91,7 @@ slackchannel2pdf --token MY_TOKEN --oldest "2019-JUL-05 11:00" general
 ## Arguments
 
 ```text
-usage: slackchannel2pdf [-h] [--token TOKEN] [--oldest OLDEST]
+usage: slackchannel2pdf-kr [-h] [--token TOKEN] [--oldest OLDEST]
                         [--latest LATEST] [-d DESTINATION]
                         [--page-orientation {portrait,landscape}]
                         [--page-format {a3,a4,a5,letter,legal}]
@@ -156,8 +152,8 @@ Please see the master configuration file for a list of all available configurati
 
 ## Limitations
 
-- Text only: **slackchannel2pdf** will export only text from a channel, but not images or icons. This is by design.
+- Text only: **slackchannel2pdf-kr** will export only text from a channel, but not images or icons. This is by design.
 - No Emojis: the tools is currently not able to write emojis as icons will will use their text representation instead (e.g. `:laughing:` instead of :laughing:).
 - DMs, Group DM: Currently not supported
 - Limited blocks support:Some non-text features of layout blocks not yet supported
-- Limited script support: This tool is rendering all text with the [Google Noto Sans](https://www.google.com/get/noto/#sans-lgc) font and will therefore support all 500+ languages that are support by that font. It does however not support many Asian languages / scripts like Chinese, Japanese, Korean, Thai and others
+- Limited script support: This tool is rendering all text with the [Nanum](https://hangeul.naver.com/2021/fonts/nanum) font and will therefore support '11,172' Korean letters, '4,888' Chinese letters, '94' English letters, '986' KS special characters that are support by that font.
