@@ -17,6 +17,8 @@
 
 ## Overview
 
+This is forked from https://github.com/ErikKalkoken/slackchannel2pdf to accommodate Korean words.
+
 This tool is aimed at end users that want to make backups of Slack conversations or be able to share them outside Slack. It will create a PDF file for every exported channel and will work both for public and private channels.
 
 **slackchannel2pdf** is an open source project and offered free of charge and under the MIT license. Please check attached licence file for details.
@@ -39,17 +41,19 @@ Here is a short summary of the key features of **slackchannel2pdf**:
 You can install the tool from PyPI with `pip install`. This wil require you to have Python reinstalled in your machine and it will work with any OS supported by Python. We recommend installing it into a virtual environment like venv.
 
 ```bash
-pip install slackchannel2pdf
+pip install git+https://github.com/th-yoon/slackchannel2pdf-kr.git
 ```
 
-You can then run the tool with the command `slackchannel2pdf` as explained in detail under [Usage](#usage).
+You can then run the tool with the command `slackchannel2pdf-kr` as explained in detail under [Usage](#usage).
 
 ### Windows
 
-For windows users we also provide a Windows EXE that does not require you to install Python. You find the EXE file under [releases](https://github.com/ErikKalkoken/slackchannel2pdf/releases).
+Not supported yet.
 
 ## Token
 
+Please use personal token instead of bot token. 
+Bot token won't work.
 To run **slackchannel2pdf** your need to have a token for your Slack workspace with the following permissions:
 
 - `channels:history`
