@@ -13,14 +13,14 @@ with open(os.path.join(this_directory, "README.md"), encoding="utf-8") as f:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name="slackchannel2pdf",
+    name="slackchannel2pdf-kr",
     version=__version__,
     packages=find_packages(),
     include_package_data=True,
     license="MIT",
     description=(
-        "slackchannel2pdf is a command line tool for exporting the text "
-        "contents of any Slack channel to a PDF file"
+        "slackchannel2pdf-kr is a command line tool for exporting the text "
+        "contents of any Slack channel to a PDF file based on slackchannel2pdf"
     ),
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -47,7 +47,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "slackchannel2pdf=slackchannel2pdf.cli:main",
+            "slackchannel2pdf-kr=slackchannel2pdf.cli:main",
         ],
     },
 )

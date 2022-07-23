@@ -162,6 +162,8 @@ class FPDF_ext(fpdf_mod.FPDF):
         for s in ["B", "I", "U"]:
             if self._tags[s] > 0:
                 style += s
+                # Korean fonts don't support BI, BU, IU or so on 
+                break
 
         self.set_font(self.font_family, size=self.font_size_pt, style=style)
 

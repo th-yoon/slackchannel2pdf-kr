@@ -761,41 +761,24 @@ class SlackChannelExporter:
                 page_orientation, settings.PAGE_UNITS_DEFAULT, page_format
             )
 
-            # add all fonts to support unicode
+            # add fonts that supports Korean
+            # Fonts from https://hangeul.naver.com/2021/fonts/nanum
             document.add_font(
                 settings.FONT_FAMILY_DEFAULT,
                 style="",
-                fname="NotoSans-Regular.ttf",
+                fname="NanumGothic.ttf",
                 uni=True,
             )
             document.add_font(
                 settings.FONT_FAMILY_DEFAULT,
                 style="B",
-                fname="NotoSans-Bold.ttf",
+                fname="NanumGothicBold.ttf",
                 uni=True,
             )
             document.add_font(
                 settings.FONT_FAMILY_DEFAULT,
                 style="I",
-                fname="NotoSans-Italic.ttf",
-                uni=True,
-            )
-            document.add_font(
-                settings.FONT_FAMILY_DEFAULT,
-                style="BI",
-                fname="NotoSans-BoldItalic.ttf",
-                uni=True,
-            )
-            document.add_font(
-                settings.FONT_FAMILY_MONO_DEFAULT,
-                style="",
-                fname="NotoSansMono-Regular.ttf",
-                uni=True,
-            )
-            document.add_font(
-                settings.FONT_FAMILY_MONO_DEFAULT,
-                style="B",
-                fname="NotoSansMono-Bold.ttf",
+                fname="NanumGothicLight.ttf",
                 uni=True,
             )
             document.alias_nb_pages()
