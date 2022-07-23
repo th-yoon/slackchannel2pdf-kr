@@ -40,7 +40,7 @@ _my_config = config_parser(
 # style and layout settings for PDF
 PAGE_UNITS_DEFAULT = "mm"
 FONT_FAMILY_DEFAULT = "NanumGothic"
-FONT_FAMILY_MONO_DEFAULT = "NanumGothicCoding"
+FONT_FAMILY_MONO_DEFAULT = "NanumGothic"
 
 PAGE_ORIENTATION_DEFAULT = _my_config.getstr("pdf", "page_orientation")
 PAGE_FORMAT_DEFAULT = _my_config.getstr("pdf", "page_format")
