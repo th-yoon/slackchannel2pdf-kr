@@ -48,7 +48,7 @@ You can then run the tool with the command `slackchannel2pdf-kr` as explained in
 
 ## Token
 
-Please use personal token instead of bot token. 
+Please use user token instead of bot token. 
 Bot token won't work.
 To run **slackchannel2pdf-kr** your need to have a token for your Slack workspace with the following permissions:
 
@@ -58,6 +58,8 @@ To run **slackchannel2pdf-kr** your need to have a token for your Slack workspac
 - `groups:read`
 - `users:read`
 - `usergroups:read`
+
+Please create a custom app with the permissions, then you will obtain the user token.  
 
 ## Usage
 
